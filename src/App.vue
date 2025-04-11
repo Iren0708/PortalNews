@@ -1,31 +1,23 @@
 <script >
 import HelloWorld from './components/HelloWorld.vue';
 import AboutView from './views/HomeView.vue';
-import Shapka from './components/UI/Shapka.vue';
+import Navbar from './components/UI/Navbar.vue';
 
 export default {
   name: "App",
   components:{
-    Shapka,
+    Navbar,
   }
 }
 </script>
 
 <template>
   <v-app>
-    <shapka/>
-    <v-main>
-    <v-btn/>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  <HelloWorld msg="Vite + Vue" />
-  <HomeView />
+  <Navbar/>
+  <v-main>
+    
   </v-main>
-  </v-app>
+</v-app>
 </template>
 
 <style scoped>
